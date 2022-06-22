@@ -1,7 +1,9 @@
+import JoinRoom from "./pages/JoinRoom";
+
 function App() {
   return (
     <div className="App">
-      <header className="text-6xl">HELLO</header>
+      <JoinRoom />
     </div>
   );
 }
