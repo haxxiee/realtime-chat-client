@@ -219,19 +219,6 @@ function App() {
                     </div>
                   );
                 })}
-
-                {/* <div className="my-3">
-                  <h2 className="font-bold text-blue-600">Lasse</h2>
-                  <p>Tjenare!</p>
-                </div>
-                <div className="my-3">
-                  <h2 className="font-bold text-blue-600">Bosse</h2>
-                  <p>Hallå där!</p>
-                </div>
-                <div className="my-3">
-                  <h2 className="font-bold text-blue-600">Lasse</h2>
-                  <p>Vgd jao?</p>
-                </div> */}
               </ul>
             </div>
           </div>
