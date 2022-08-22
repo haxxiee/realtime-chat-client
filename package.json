@@ -5,12 +5,14 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "start": "serve -s build",
     "preview": "vite preview",
-    "start": "vite build"
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "serve": "^14.0.1",
     "socket.io-client": "^4.5.1"
   },
   "devDependencies": {
