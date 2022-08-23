@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { io } from "socket.io-client";
 
-let socket = io(process.env.BACKEND_URL);
+let socket = io("chat-postgres.herokuapp.com/");
 
 function App() {
   const [roomsVisited, setRoomsVisited] = useState([]);
