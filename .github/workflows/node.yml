@@ -26,4 +26,4 @@ jobs:
         with:
           node-version: 16
       - run: "npm install"
-      - run: "npx eslint src/*.js"
+      - run: "npx eslint src/*.jsx"
