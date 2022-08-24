@@ -1,0 +1,29 @@
+name: chat-frontend-CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: "Setting up Node v16 workflow"
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: "npm install"
+      - run: "npm run build"
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: "Setting up Node v16 workflow && checking ESLINT"
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: "npm install"
+      - run: "npx eslint src/*.js"
